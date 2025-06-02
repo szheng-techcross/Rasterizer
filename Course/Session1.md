@@ -115,7 +115,7 @@ WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, PSTR szCmdLine, int iCmdSh
 ```
 
 このコードを実行すると、以下のようなウィンドウが表示されます。  
-[ウィンドウを挿入]  
+![image](https://github.com/user-attachments/assets/e8abdb9d-b94f-4433-b637-f181d30b55d0)
 
 `CreateWindowA`は、ウィンドウのスタイルや動作を制御するAPIです。サイズ、タイトル、フレームスタイル、開始時に最小化または最大化するなどのプロパティを設定できます。  
 この関数は、ここでは`hwnd`と名付けられた`HANDLE`を返します。これはウィンドウのプロセスへの参照であり、ウィンドウのサイズや位置を取得するなどの操作に必要です。  
@@ -248,7 +248,8 @@ GetClientRect(hwnd, &clientRect);
 ```
 
 `RECT`は、画面のサブリージョンの座標を提供するWin32構造体です。  
-[RECTのイラストを挿入]  
+![image](https://github.com/user-attachments/assets/24b201c9-d6df-4ca7-8f5f-22f6aa9c8cdf)
+
 特に`GetClientRect`を使用すると、プログラムの位置とサイズを取得できます。  
 ウィンドウのサイズを計算できます。  
 ```c
@@ -394,6 +395,7 @@ for(int y = 0;
     row += pitch;
 }
 ```
+![image](https://github.com/user-attachments/assets/727898db-3b4b-4e63-bf16-47dab3175efb)
 
 このコードは意図的に不完全であり、独自の方法を見つけ、間違いを犯し、それを解決することでC/C++の書き方を学ぶことができます。  
 今週の内容のコピーはGitHubページにもあり、次のセッションのためにそこから始めることができます。  
